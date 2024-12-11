@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121825;
+}
+header {
+    background-color: #121825;
+    padding: 30px;
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px solid #f7f7f718;
+}
+.burger {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.burger:hover {
+    transform: scale(1.1);
+    transition: transform 80ms ease-in;
+}
+.line {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 4.3px;
+}
+.modal-outer {
+    background-color: #00000079;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+.modal-inner {
+    animation-name: slideIn;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    left: -70%;
+    max-width: 60%;
+    background-color: #1f2937;
+    color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes slideIn {
+    100% {
+        left: 0;
+    }
+}
+.close-dropdown {
+    position: absolute;
+    right: -30px;
+    top: 30px;
+    margin-left: 25rem;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+img {
+    width: 90%;
+}
+.hidden {
+    display: none;
+}
+.back {
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 20px 30px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.back a {
+    text-decoration: none;
+    color: white;
+}
+.back:hover {
+    transform: scale(1.03);
+    transition: transform 80ms ease-in;
+}
